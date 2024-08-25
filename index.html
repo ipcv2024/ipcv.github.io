@@ -64,10 +64,12 @@
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Members</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Equipment</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Publication</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Apply</a>
+  <a href="#members" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Members</a>
+  <a href="#equipment" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Equipment</a>
+  <a href="#publications" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Publication</a>
+<a href="#student" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Students</a>
+  <a href="#apply" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Apply</a>
+<a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
 </div>
 <div id="home">
 <br>
@@ -291,8 +293,18 @@
           </tr>
         </tbody></table>
 </div>
-	
-</body>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+  }
+}
+</script>
+
 
 </html>
 
